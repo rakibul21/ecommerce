@@ -1,0 +1,61 @@
+.text-color{ color: #ff4800; }
+.bg-color{ background-color: #ff4800; }
+.bg-color:hover{background-color: #d93d00;}
+.my-nav-link{ font-weight: bold; }
+.my-nav-link:hover
+{
+    background-color: #d93d00;
+    color: white;
+}
+
+.banner-section
+{
+    height: 500px;
+    background-image: url("../img/header.jpg");
+}
+
+.banner-card h3
+{
+    font-size: 50px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+
+.banner-card h1
+{
+    font-size: 65px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.form-card
+{
+    padding-top: 85px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.text-color-c
+{
+    color: lime;
+}
+.text-color-c-nav{
+    color: lime;
+}
+.text-color-c-nav:hover
+{
+    color: white;
+}
+.btn-ouline-lime
+{
+    color: lime;
+    border: 2px solid lime;
+    background-color: black;
+}
+.btn-ouline-lime:hover
+{
+    color: black;
+    background-color: lime;
+
+}
+
