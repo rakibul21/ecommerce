@@ -25,9 +25,9 @@
                                 <td>{{$comment->name}}</td>
                                 <td>{{$comment->comment}}</td>
                                 <td>{{$comment->product->name}}</td>
-                                <td>0</td>
+                                <td>{{ $comment->status == 1 ? 'Published' : 'Unpublished' }}</td>
                                 <td>
-                                    <a href="" class="btn btn-primary btn-sm">Edit <i class="fa-solid fa-edit"></i></a>
+                                    <a href="{{route('comment.status',['id' => $comment->id])}}" class="btn btn-primary btn-sm">Status <i class="fa-solid fa-arrow-up"></i></a>
                                     <a href="" class="btn btn-danger btn-sm">Delete <i class="fa-solid fa-trash"></i></a>
                                 </td>
                             </tr>

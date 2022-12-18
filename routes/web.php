@@ -6,7 +6,8 @@ use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\BrandController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\Dashboardcontroller;
-use App\Http\Controllers\CommentController;
+use App\Http\Controllers\Commentcontroller;
+
 
 
 /*
@@ -24,7 +25,7 @@ Route::get('/',[HomeController::class,'index'])->name('home');
 Route::get('/product/details/{id}', [ProductController::class, 'details'])->name('product.details');
 Route::get('/category/details{id}',[CategoryController::class,'details'])->name('category.details');
 Route::get('/brand/details/{id}', [BrandController::class, 'details'])->name('brand.details');
-Route::post('/new-product-comment/{id}', [HomeController::class, 'newComment'])->name('new-product-comment');
+Route::post('/new-product-comment/{id}', [HomeCophpntroller::class, 'newComment'])->name('new-product-comment');
 
 
 
@@ -41,7 +42,10 @@ Route::middleware(['auth:sanctum',config('jetstream.auth_session'),'verified'])-
     Route::get('/category/delete{id}',[CategoryController::class,'delete'])->name('category.delete');
 
 
-    Route::resource('/comment',CommentController::class);
+    Route::get('/comment/manage',[CommentController::class,'index'])->name('comment.manage');
+    Route::get('/comment/status/{id}',[CommentController::class,'commentStatus'])->name('comment.status');
+
+
 
 
     Route::resource('/brand',BrandController::class);

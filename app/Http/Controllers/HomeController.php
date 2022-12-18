@@ -21,7 +21,7 @@ class HomeController extends Controller
 
     public function newComment(Request $request, $id)
     {
-        return $request->all();
-
+        Comment::newComment($request, $id);
+        return redirect()->back()->with('message', 'Comment submit successfully.');
     }
 }

@@ -18,7 +18,6 @@ return new class extends Migration
             $table->integer("product_id");
             $table->string("name");
             $table->text("comment");
-            $table->integer("status")->default(0);
             $table->timestamps();
         });
     }

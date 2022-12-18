@@ -42,7 +42,7 @@
             <li class="dropdown">
                 <a href="" class="nav-link text-color-c-nav dropdown-toggle" data-bs-toggle="dropdown">Comment</a>
                 <ul class="dropdown-menu">
-                    <li><a href="" class="dropdown-item">Manage Comment</a></li>
+                    <li><a href="{{route('comment.manage')}}" class="dropdown-item">Manage Comment</a></li>
                 </ul>
             </li>
             <li class="dropdown">
